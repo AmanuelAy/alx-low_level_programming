@@ -13,3 +13,4 @@ int main(void)
 		printf("%d", a);
 	putchar('\n');
 	return (0);
+}
