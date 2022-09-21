@@ -1,28 +1,26 @@
+/*
+ * File: 5-rev_string.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
-*
-*
-*/
+ * rev_string - Reverses a string.
+ * @s: The string to be reversed.
+ */
 void rev_string(char *s)
 {
+	int len = 0, index = 0;
 	char tmp;
-	int i, length1, length2;
 
-	length1 = 0;
-	length2 = 0;
+	while (s[index++])
+		len++;
 
-while (s[length1] != '\0')
-	length1++;
-
-	length2 = length1 - 1;
-	for (i = 0; i < length1 / 2; i ++)
+	for (index = len - 1; index >= len / 2; index--)
 	{
-		"samalx" "xlamas"
-		tmp = s[i] ;
-		s[i] = s[length2] ;
-		s[length2] = tmp;
-		length2 -= 1;
-	
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] - tmp;
 	}
 }
