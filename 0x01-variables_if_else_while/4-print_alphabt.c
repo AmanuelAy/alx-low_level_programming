@@ -1,4 +1,4 @@
-#include <stdio.h>                                                                                                             
+#include <stdio.h>
 /*
  * main - Entry point
  *
@@ -17,5 +17,5 @@ int main(void)
 			c++;
 		}
 	putchar('\n');
-	return(0);
+	return (0);
 }
