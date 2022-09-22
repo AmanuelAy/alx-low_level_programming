@@ -28,7 +28,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	for (; *n1; n1--, r_index--)
 	{
 		num = (*n1 - '0') + tens;
-		*(r + r_index) = (num % 10) + '0';
+		*(r + r index) = (num % 10) + '0';
 		tens = num / 10;
 	}
 
@@ -48,8 +48,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	else if (tens && r_index < 0)
 		return (0);
 	
-	return (0);
-
+	return (r + r_index + 1);
 }
 /**
  * infinite_add - Adds two numbers
