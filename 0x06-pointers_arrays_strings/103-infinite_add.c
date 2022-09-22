@@ -5,7 +5,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
 /**
  * add_strings - Adds the numbers stored in two strings.
- * @n: The string containing the first number to be added.
+ * @n1: The string containing the first number to be added.
  * @n2: The string containing the second number to be added.
  * @r: The buffer to store the result.
  * @r_index: The current index of the buffer.
@@ -28,7 +28,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	for (; *n1; n1--, r_index--)
 	{
 		num = (*n1 - '0') + tens;
-		*(r + r index) = (num % 10) + '0';
+		*(r + r_index) = (num % 10) + '0';
 		tens = num / 10;
 	}
 
@@ -42,7 +42,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	if (tens && r_index >= 0)
 	{
 		*(r + r_index) = (tens % 10) + '0';
-		return (r + r index);
+		return (r + r_index);
 	}
 	
 	else if (tens && r_index < 0)
