@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strdub - returns a pointer to a newly allocated
+* _strdup - returns a pointer to a newly allocated
 *space in memory, which contains a copy of the
 *string given as a parameter.
 *@str:String to be copied
@@ -10,7 +10,7 @@
 *space
 */
 
-char *_strdub(char *str)
+char *_strdup(char *str)
 {
 	char *cpy;
 	int index, len;
