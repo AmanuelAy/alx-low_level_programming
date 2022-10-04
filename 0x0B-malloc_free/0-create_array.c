@@ -2,7 +2,6 @@
 
 /**
 * create_array - creates an array of chars, and
-
 * initializes it with a specific char.
 *@size: size of the array
 *@c: Character of insert
@@ -17,7 +16,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	array = mallcom(sizeof(char) * size);
+	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
 		return (NULL);
