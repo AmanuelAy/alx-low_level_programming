@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "list.h"
+#include "lists.h"
 /**
  * sum_listint - calcluates the sum of all the data (n) of a linked list
  * @head : pointer to the head of the list
