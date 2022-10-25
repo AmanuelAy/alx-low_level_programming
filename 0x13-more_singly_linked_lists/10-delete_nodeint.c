@@ -5,10 +5,10 @@
  * @head : pointer to the head of the list 
  * @index: index of the node to be deleted
  * (indices starting at 0)
- * Return: 1 - if function succceeds,
+ * Return: 1 - if function succeeds,
  * -1 - if function fails
  */
-int delete_nodeint_at_index(listint_t(listint_t **head, unsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 listint_t *tmp, *copy = *head;
 unsigned int node;
@@ -29,6 +29,9 @@ if (copy->next == NULL)
 return (-1);
 
 copy = copy->next;
+}
+
+tmp = copy->next;
 copy->next = tmp->next;
 free(tmp);
 return (1);
