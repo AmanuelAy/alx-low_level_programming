@@ -16,7 +16,6 @@ typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
-	struct listint_s *next;
 } listint_t;
 
 /**
@@ -49,4 +48,3 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
 #endif
-
