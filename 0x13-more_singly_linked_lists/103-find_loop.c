@@ -2,7 +2,7 @@
 /**
  * find_listint_loop - finds the loop contained
  *		       in a linked list
- * @head : pointer to head of the linked list
+ * @head : pointer to the head of the linked list
  * Return: pointer the node where the loop starts,
  *	   or NULL - if there is no loop
  */
@@ -11,7 +11,7 @@ listint_t *find_listint_loop(listint_t *head)
 listint_t *node1, *node2;
 
 if (head == NULL || head->next == NULL)
-return (NULL)
+return (NULL);
 
 node1 = head->next;
 node2 = (head->next)->next;
