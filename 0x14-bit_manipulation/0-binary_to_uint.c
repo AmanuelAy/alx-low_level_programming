@@ -5,7 +5,7 @@
  * unsigned int.
  * @b: binary.
  *
- * Retutn: unsigned int.
+ * Return: unsigned int.
  */
 unsigned int binary_to_unit(const char *b)
 {
